@@ -710,3 +710,21 @@ html, body, #game-container {
     width: 4rem;
     height: 4rem;
 }
+
+.research-view-container .tab-content .tab-pane.active {
+    overflow: auto;
+}
+.nav-tabs {
+    overflow-x: auto;
+    overflow-y:hidden;
+    flex: none;
+    flex-wrap: nowrap;
+}
+.nav-tabs .nav-link {
+    white-space: nowrap;
+}
+.chart-sales-div {
+    position: relative;
+    min-height: 300px;
+    max-height: 100vh;
+}

@@ -69,23 +69,25 @@ const PhoneSales = (props) => {
         <Modal.Body>
             Take a look at these sales results.
             <p></p>
-            <Bar options={salesOptions} data={{
-                labels: [
-                    'Month 1',
-                    'Month 2',
-                    'Month 3'
-                ],
-                datasets: [
-                    {
-                        data: salesDataSet[remainingFeedback],
-                        backgroundColor: '#ff0000',
-                    },
-                    {
-                        data: [ 10000, 15000, 20000 ],
-                        backgroundColor: '#ccc',
-                    }
-                ]
-            }}/>
+            <div className="chart-sales-div">
+                <Bar options={salesOptions} data={{
+                    labels: [
+                        'Month 1',
+                        'Month 2',
+                        'Month 3'
+                    ],
+                    datasets: [
+                        {
+                            data: salesDataSet[remainingFeedback],
+                            backgroundColor: '#ff0000',
+                        },
+                        {
+                            data: [ 10000, 15000, 20000 ],
+                            backgroundColor: '#ccc',
+                        }
+                    ]
+                }}/>
+            </div>
             {remainingFeedback > 1 && <>
                 Was your phone successful? Did you see anything you could improve on?
                 <p></p>

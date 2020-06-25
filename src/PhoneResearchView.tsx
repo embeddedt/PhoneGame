@@ -214,7 +214,7 @@ const PhoneResearchView = (props) => {
     return <div className="bg-light research-view-container">
         <span className="light-instructions">
             Explore the research information available to you. When you're ready to start designing,
-            click the "Proceed to design" button.
+            click the "Proceed to Design" button.
         </span>
         <Tabs defaultActiveKey="clientneeds" id="research-view-tabs">
             <Tab eventKey="usage" title="Usage">
@@ -285,7 +285,7 @@ const PhoneResearchView = (props) => {
             </Tab>
         </Tabs>
         <p></p>
-        <Button variant="primary" onClick={props.onDone}>Proceed to design</Button>
+        <Button variant="primary" onClick={props.onDone}>Proceed to Design</Button>
     </div>;
 };
 
